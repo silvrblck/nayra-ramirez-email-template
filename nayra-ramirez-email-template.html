@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .container{
+            
+        }
+        .row{ 
+            border: dotted green;
+            
+        }
+        .first {
+            border: solid blue; /*columm that contains mailboxes*/
+            background: grey;
+            height: 900px;
+            color: white;
+            
+        }
+        .second {
+            border: dotted purple; /*column that contains email search*/
+            background: dodgerblue;
+            line-height: 20px;
+        }
+        .third {
+            border: solid red; /*column that contains email content*/
+            background:orangered;
+        }
+        input[type=message]{
+            height: 400px; /*email message type box*/
+            width: 600px;
+        }
+        input[type=search]{
+            width: 350px; /*search box*/
+        }
+        .reply-button {
+            text-align: right;
+        }
+        .message {
+            
+        }
+    </style>
+</head>
+<body>
+<!--beginning of div-->
+    <div class="container">
+        <div class="row">
+          <div class="col-2 first">
+            <p>Welcome, Nayra!</p>
+
+            <button type="button" class="btn btn-danger">Compose</button>
+            <br>
+            <p>Inbox(1)</p>
+            <p>Tagged</p>
+            <p>Important</p>
+            <p>Sent Mail</p>
+            <p>Drafts</p>
+            <p>Trash</p>
+
+                
+            
+          </div>
+<!--End of div-->
+
+<!--Beginnning of div-->
+          <div class="col-4 second">
+            <form class="example" action="action_page.php">
+                <input type="search" placeholder="Search for emails" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <br>
+             <h5 class="card-title"> LinkedIn            02:45pm</h5>
+    
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+          
+<!--End of div-->
+
+<!--Beginning of div-->
+          <div class="col-6 third">
+            <p>To: taylor@lamarsoftware.io</p>
+            <p>From:re-reply@theofficebc.com</p>
+
+            <h1>Michael Scott Daily Quotes</h1>
+            <p>"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.' That's what friends do."</p>
+            <p>"It's a good thing Russia doesn't exist anymore." </p>
+            <p>"You cheated on me? When I specifically asked you not to?" </p>
+            <p>"Reverse psychology is an awesome tool. I don't know if you guys know about it, but, basically, you make someone think the opposite of what you believe, and that tricks them into doing something stupid. Works like a charm." </p>
+            
+            <form class="reply-form" action="action_page.chp">
+                <input type="message" placeholder="Type message" name="msg">
+                <button class="reply-button" type="button" id="reply-button">Reply</button>
+            </form>
+            </div>
+            
+        </div>
+        </div>
+<!--End of div-->
+</body>
+</html>
